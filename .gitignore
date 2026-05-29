@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build output
+dist/
+build/
+*.tsbuildinfo
+
+# Test coverage
+coverage/
+
+# Environment variables — never commit
+.env
+.env.local
+.env.*.local
+
+# Turborepo cache
+**/.turbo/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# pnpm lockfile is committed — do NOT add pnpm-lock.yaml here

@@ -1,0 +1,20 @@
+{
+  "name": "solana-onramp",
+  "private": true,
+  "packageManager": "pnpm@9.0.0",
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "format": "biome format --write .",
+    "type-check": "turbo type-check",
+    "test": "turbo test",
+    "clean": "turbo clean && rm -rf node_modules"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "latest",
+    "turbo": "latest",
+    "typescript": "^5.0.0"
+  }
+}
