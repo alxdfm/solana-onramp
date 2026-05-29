@@ -1,0 +1,37 @@
+{
+  "name": "@callydus/onramp-oracle-pyth",
+  "version": "0.1.0",
+  "description": "Pyth Network price oracle adapter for solana-onramp — high-accuracy on-chain price feeds",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "type-check": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "clean": "rm -rf dist"
+  },
+  "peerDependencies": {
+    "@solana/web3.js": "^1.0.0"
+  },
+  "dependencies": {
+    "@callydus/onramp-core": "workspace:*",
+    "@pythnetwork/client": "^2.21.0",
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "@solana/web3.js": "^1.98.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0"
+  }
+}
