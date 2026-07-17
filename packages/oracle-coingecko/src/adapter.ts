@@ -150,8 +150,7 @@ export class CoinGeckoOracleAdapter implements PriceOracleAdapter {
 
     if (price === undefined || price === null) {
       throw new PriceUnavailableError(
-        'CoinGecko API response missing solana.usd price. ' +
-          `Received: ${JSON.stringify(body)}`,
+        `CoinGecko API response missing solana.usd price. Received: ${JSON.stringify(body)}`,
       );
     }
 
